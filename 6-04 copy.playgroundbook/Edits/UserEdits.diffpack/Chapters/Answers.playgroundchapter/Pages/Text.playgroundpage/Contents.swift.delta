@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>//made on December 15
+//made for ICS3U 
+//made by Ben H
+//address
+enum streetType : String{
+    case Street
+    case Road
+    case Avenue
+    case Drive
+    case Crescent
+    case Lane
+}
+enum provinces : String {
+    case ON
+    case QC
+    case BC
+    case AB
+    case NS
+    case MB
+    case SK
+    case NB
+    case NL
+    case PE
+    case NT
+    case YT
+    case NU
+}
+
+struct address {
+    var name : String
+    var address : String
+    var postalCode : String
+    var province : String
+}
+
+let firstName = ask("Enter First Name")
+let lastName = ask("Enter Last Name")
+let addressA = ask("Enter Address")
+let postalCodeA = ask("Enter Postal Code")
+let province : String = ask("Enter Province")
+let provinceB : provinces = provinces(rawValue: province)!
+let streettype : String = ask("Enter Street Type")
+let street : streetType = streetType(rawValue: streettype)!
+
+show(firstName)
+show(lastName)
+show(addressA)
+show(street.rawValue)
+show(provinceB.rawValue)
+show(postalCodeA)
+</string>
+			<key>ModifiedRange</key>
+			<string>{145, 978}</string>
+			<key>OriginalContent</key>
+			<string>show("What is your name?")
+
+let name = ask("Name")
+
+show("Hi " + name)
+
+</string>
+			<key>OriginalRange</key>
+			<string>{145, 72}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Answers.playgroundchapter/Pages/Text.playgroundpage/Contents.swift</string>
+</dict>
+</plist>
